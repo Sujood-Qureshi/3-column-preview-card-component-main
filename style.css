@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+main {
+    width: 100%;
+    /* height:100vh; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: hsl(0, 0%, 95%);
+}
+
+.coloumnsCard {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 6rem 2rem;
+}
+
+.columns {
+    padding: 4rem;
+    display: flex;
+    flex-direction: column;
+    height: 500px;
+    justify-content: space-between;
+    flex: 0 1 25rem;
+}
+
+.columns img {
+    width: 3rem;
+    height: 2rem;
+}
+
+.columns h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    font-family: 'Big Shoulders Display', cursive;
+    color: hsl(0, 0%, 95%);
+    text-transform: uppercase;
+}
+
+.columns p {
+    font-size: 1rem;
+    color: hsla(0, 0%, 100%, 0.75);
+    line-height: 1.5;
+}
+
+.coloumnsCard .colOne {
+    background: hsl(31, 77%, 52%);
+}
+
+.coloumnsCard .colTwo {
+    background: hsl(184, 100%, 22%);
+}
+
+.coloumnsCard .colThree {
+    background: hsl(179, 100%, 13%);
+}
+
+.coloumnsCard .colOne a {
+    padding: 0.8rem;
+    width: 9rem;
+    background: hsl(0, 0%, 95%);
+    border: 2px solid hsl(0, 0%, 95%);
+    border-radius: 30px;
+    text-align: center;
+    text-decoration: none;
+    color: hsl(31, 77%, 52%);
+}
+.coloumnsCard .colTwo a {
+    padding: 0.8rem;
+    width: 9rem;
+    background: hsl(0, 0%, 95%);
+    border: 2px solid hsl(0, 0%, 95%);
+    border-radius: 30px;
+    text-align: center;
+    text-decoration: none;
+    color: hsl(184, 100%, 22%);
+}
+.coloumnsCard .colThree a {
+    padding: 0.8rem;
+    width: 9rem;
+    background: hsl(0, 0%, 95%);
+    border: 2px solid hsl(0, 0%, 95%);
+    border-radius: 30px;
+    text-align: center;
+    text-decoration: none;
+    color: hsl(179, 100%, 13%);
+}
+
+/* .columns .btn{
+    border: 2px solid hsl(0, 0%, 95%) ;
+    background: hsl(0, 0%, 95%);
+    border-radius: 30px;
+    padding: 1rem;
+    width: 9rem;
+    text-align: center;
+    color: hsl(0, 0%, 95%);
+}
+.columns .btn a{
+    text-decoration: none;
+}
+
+.coloumnsCard .colOne .btn a{
+    color: hsl(31, 77%, 52%);
+}
+.coloumnsCard .colTwo .btn a{
+    color: hsl(184, 100%, 22%);
+}
+.coloumnsCard .colThree .btn a{
+    color: hsl(179, 100%, 13%);
+} */
+
+
+/* hover effects */
+.coloumnsCard .columns a:hover{
+    background: transparent;
+    color: hsl(0, 0%, 95%);
+}
+/* media query */
+@media screen and (min-width:1440px) {
+    main {
+        height: 100vh;
+    }
+}
+@media screen and (max-width:376px) {
+    .columns {
+        padding: 3rem;
+    }
+}
